@@ -1,0 +1,33 @@
+.notice {
+  top: 45%;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  background-color: white;
+  border: solid 1px black;
+
+  &.success {
+    color: green;
+    border-color: green;
+  }
+
+  &.error {
+    color: darkred;
+    border-color: darkred;
+  }
+
+  &.updated {
+    color: blue;
+    border-color: blue;
+  }
+
+  &.toggle-visibility {
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  .block {
+    display: block !important;
+  }
+}

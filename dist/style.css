@@ -1,0 +1,22 @@
+.notice {
+  top: 45%;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  background-color: white;
+  border: solid 1px black; }
+  .notice.success {
+    color: green;
+    border-color: green; }
+  .notice.error {
+    color: darkred;
+    border-color: darkred; }
+  .notice.updated {
+    color: blue;
+    border-color: blue; }
+  .notice.toggle-visibility {
+    z-index: -1;
+    visibility: hidden; }
+  .notice .block {
+    display: block !important; }

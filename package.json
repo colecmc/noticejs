@@ -1,0 +1,35 @@
+{
+  "name": "notice-js",
+  "version": "0.1.0",
+  "description": "Easy to use vanilla js, micro-library to show a notice on screen",
+  "main": "index.js",
+  "engines": {
+    "node": "10.14.0"
+  },
+  "scripts": {
+    "test": "jest --env=jsdom",
+    "build": "babel-node index.js",
+    "start": "babel-node index.js",
+    "watch": "npm run build && nodemon --watch index.js --watch src"
+  },
+  "author": "colecmc",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "webpack": "^4.28.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "webpack-cli": "^3.1.2"
+  },
+  "private": false
+}
