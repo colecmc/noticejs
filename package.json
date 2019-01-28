@@ -1,5 +1,5 @@
 {
-  "name": "notice-js",
+  "name": "@colecmc/noticejs",
   "version": "0.1.0",
   "description": "Easy to use vanilla js, micro-library to show a notice on screen",
   "main": "index.js",

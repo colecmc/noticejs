@@ -54,13 +54,29 @@ describe('Notice', () => {
 
     test('Notice/hide should add toggle-visibility to module', () =>{
         notice.hide();
+        /* "notice" has been destroyed */
 
-        expect(notice.module.classList.contains('toggle-visibility')).toBeTruthy();
+        const notice1 = new Notice();
+        expect(notice1.module.classList.contains('toggle-visibility')).toBeTruthy();
+
+        notice1.destroy();
+    });
+
+    test('Notice/hideLater should throw an error if parameter is not a number', () => {
+        try {
+            const notice2 = new Notice();
+
+            notice2.hideLater('hello');
+        } catch (e) {
+            expect(e.message).toBe('hello - must be a number. notice.js/hideLater()');
+        }
     });
 
     test('Notice/hideLater should return a Promise', () => {
-        expect(typeof notice.hideLater().then).toBe('function');
-        expect(typeof notice.hideLater().catch).toBe('function');
-        expect(typeof notice.hideLater().finally).toBe('function');
+        const notice3 = new Notice();
+
+        expect(typeof notice3.hideLater(9).then).toBe('function');
+        expect(typeof notice3.hideLater(8).catch).toBe('function');
+        expect(typeof notice3.hideLater(7).finally).toBe('function');
     });
 });

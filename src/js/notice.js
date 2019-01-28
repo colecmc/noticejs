@@ -68,6 +68,10 @@ class Notice {
     }
 
     hideLater(elapse) {
+        if (typeof elapse !== 'number') {
+            throw new Error(`${elapse.toString()} - must be a number. notice.js/hideLater()`);
+        }
+
         const elapsed = (elapse === 1) ? 2000 : elapse;
 
         return new Promise((resolve) => {
@@ -117,7 +121,7 @@ class Notice {
         this.spin = null;
         this.noteText = null;
         this.module = null;
-        return this.constructor();
+        return null;
     }
 }
 
