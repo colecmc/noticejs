@@ -52,7 +52,7 @@ describe('Notice', () => {
         expect(notice.module.classList.contains('toggle-visibility')).toBeFalsy();
     });
 
-    test('Notice/hide should add toggle-visibility to module', () =>{
+    test('Notice/hide should add toggle-visibility to module.', () =>{
         notice.hide();
         /* "notice" has been destroyed */
 
@@ -62,7 +62,13 @@ describe('Notice', () => {
         notice1.destroy();
     });
 
-    test('Notice/hideLater should throw an error if parameter is not a number', () => {
+    test('Notice/hide should return a promise - aka call hideLater - if 1 is passed to method.', () =>{
+        const notice1x = new Notice();
+
+        expect(notice1x.hide(1).then).toBeTruthy();
+    });
+
+    test('Notice/hideLater should throw an error if parameter is not a number.', () => {
         try {
             const notice2 = new Notice();
 
@@ -72,7 +78,7 @@ describe('Notice', () => {
         }
     });
 
-    test('Notice/hideLater should return a Promise', () => {
+    test('Notice/hideLater should return a Promise.', () => {
         const notice3 = new Notice();
 
         expect(typeof notice3.hideLater(9).then).toBe('function');
@@ -80,3 +86,4 @@ describe('Notice', () => {
         expect(typeof notice3.hideLater(7).finally).toBe('function');
     });
 });
+

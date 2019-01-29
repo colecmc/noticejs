@@ -77,9 +77,9 @@ class Notice {
         return new Promise((resolve) => {
             const timer = setTimeout(() => {
                 this.module.classList.add('toggle-visibility');
-                this.destroy();
+                resolve(this);
                 clearTimeout(timer);
-                resolve();
+                this.destroy();
             }, elapsed);
         });
     }
