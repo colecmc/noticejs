@@ -57,7 +57,7 @@ Hides the notice after the `elapse` time has passed. Will throw an error if some
 ### CSS
 The css in the /dist is minimal, you will likely want to add your own styles.
 
-THe library uses the following css class names and styles should correspond:
+The library uses the following css class names and styles should correspond:
 * notice - main container
 * toggle-visibility - hides the main container (this is on by default)
 * spinner - optionally use a background image to display some kind of loading/spinner icon
