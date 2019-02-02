@@ -1,4 +1,4 @@
-import { Notice } from '../src/js/notice';
+import '../dist/notice';
 
 describe('Notice', () => {
     const notice = new Notice();
@@ -86,4 +86,3 @@ describe('Notice', () => {
         expect(typeof notice3.hideLater(7).finally).toBe('function');
     });
 });
-

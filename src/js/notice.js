@@ -1,11 +1,6 @@
 import createDOM from './createDOM';
 
-/**
- * Easy to use micro-library to show a notice on screen
- * @author colecmc
- * @version 0.1.0
- */
-class Notice {
+export class Notice {
     /* global document, HTMLElement */
 
     constructor() {
@@ -124,5 +119,3 @@ class Notice {
         return null;
     }
 }
-
-export default Notice;
