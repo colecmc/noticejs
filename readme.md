@@ -8,8 +8,17 @@
 `npm install @colecmc/noticejs --save`
 
 ## Usage
+### Common js module
+`const Notice = require('@colecmc/noticejs');`
+
+### ES6 module
+`import { Notice } from '@colecmc/noticejs';`
+
+### Script tag
+`<script type="text/js" src="/wherever-you-put-js/notice.js"></script>`
+
+### New up an instance
 ```js
-const Notice = require('@colecmc/noticejs/src/js/notice');
 const notice = new Notce();
 
 notice.memo('Hello World!')
