@@ -1,8 +1,8 @@
 {
   "name": "@colecmc/noticejs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easy to use vanilla js, micro-library to show a notice on screen",
-  "main": "index.js",
+  "main": "dist/notice.js",
   "engines": {
     "node": "10.14.0"
   },

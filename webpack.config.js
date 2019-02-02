@@ -23,6 +23,8 @@ function webpackConfig(options) {
     entry: './src/js/notice.js',
     output: {
       filename: 'notice.js',
+      library: '',
+      libraryTarget: 'window',
       path: path.resolve(__dirname, './dist/'),
     },
   };
