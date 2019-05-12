@@ -1,11 +1,13 @@
 import webpack from 'webpack';
 import webpackConfig from './webpack.config';
+/**
 import runNodeSass from './src/js/run-node-sass';
 
 runNodeSass({
   input: './src/css/style.scss',
   outFile: './dist/',
 });
+*/
 
 webpack(webpackConfig({ mode: process.env.NODE_ENV }), (error, stats) => {
   const timeStamp = new Date();
