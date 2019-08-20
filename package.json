@@ -1,6 +1,6 @@
 {
   "name": "@colecmc/noticejs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Easy to use vanilla js, micro-library to show a notice on screen",
   "main": "dist/notice.js",
   "engines": {
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.13",
     "webpack": "^4.31.0"
   },
   "devDependencies": {
@@ -29,6 +30,10 @@
     "jest": "^24.8.0",
     "nodemon": "^1.19.0",
     "webpack-cli": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colecmc/noticejs.git"
   },
   "private": false
 }
