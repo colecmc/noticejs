@@ -19,7 +19,7 @@
 
 ### New up an instance
 ```js
-const notice = new Notce();
+const notice = new Notice();
 
 notice.memo('Hello World!')
       .type('some-css-class-name other css classnames')
