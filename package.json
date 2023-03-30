@@ -5,8 +5,8 @@
   "main": "dist/notice.js",
   "scripts": {
     "test": "jest --env=jsdom",
-    "build": "babel-node index.js",
-    "start": "babel-node index.js",
+    "build": "./node_modules/.bin/babel.cmd index.js",
+    "start": "./node_modules/.bin/babel.cmd index.js",
     "watch": "npm run build && nodemon --watch index.js --watch src"
   },
   "author": "colecmc",
@@ -17,6 +17,8 @@
     "webpack": "^5.76.2"
   },
   "devDependencies": {
+    "@babel/core": "7.21.3",
+    "@babel/node": "7.20.7",
     "@babel/preset-env": "^7.20.2",
     "babel": "^6.23.0",
     "eslint": "^5.16.0",
